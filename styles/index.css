@@ -1,0 +1,291 @@
+
+:root {
+--cloud-white: #F8F9FA;
+--soft-forest-green: #2D6A4F;
+--deep-blue: #1B4332; /* Rendered as a dark shade per hex code */
+--charcoal-gray: #343A40;
+--light-gray: #E9ECEF;
+--font-main: 'Ubuntu', sans-serif;
+--font-footer: 'Ubuntu', monospace; /* Using standard Ubuntu as requested fallback */
+}
+
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: var(--font-main);
+background-color: var(--cloud-white);
+color: var(--charcoal-gray);
+line-height: 1.6;
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+}
+
+/* Typography */
+h1 {
+font-weight: 500;
+margin: 1.5rem 0 1rem;
+color: var(--deep-blue);
+}
+
+h2 {
+font-size: 1.1rem;
+font-weight: 500;
+text-align: center;
+background-color: var(--deep-blue);
+color: var(--cloud-white);
+padding: 0.75rem;
+margin: 0;
+}
+
+header {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 1rem;
+background-color: var(--cloud-white);
+}
+
+.logo-container {
+display: flex;
+align-items: center;
+gap: 1rem;
+}
+
+.logo-container svg {
+width: 50px;
+height: 50px;
+}
+
+.site-name {
+font-size: 1.25rem;
+font-weight: 700;
+color: var(--deep-blue);
+}
+
+/* Navigation */
+#menuBtn {
+background: none;
+border: none;
+cursor: pointer;
+padding: 0.5rem;
+display: block;
+}
+
+#menuBtn svg {
+width: 32px;
+height: 32px;
+fill: var(--charcoal-gray);
+}
+
+nav {
+background-color: var(--charcoal-gray);
+width: 100%;
+}
+
+nav ul {
+list-style-type: none;
+display: none; /* Hidden on mobile by default */
+flex-direction: column;
+}
+
+nav ul.open {
+display: flex;
+}
+
+nav li {
+border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+nav a {
+display: block;
+padding: 1rem;
+text-decoration: none;
+color: var(--cloud-white);
+font-weight: 500;
+transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+background-color: var(--soft-forest-green);
+}
+
+nav a.active {
+background-color: var(--soft-forest-green);
+}
+
+
+main {
+flex: 1;
+padding: 0 1rem;
+max-width: 1200px;
+margin: 0 auto;
+width: 100%;
+}
+
+
+.card {
+background-color: var(--light-gray);
+border: 1px solid #ccc;
+margin-bottom: 1.5rem;
+overflow: hidden;
+}
+
+.card-body {
+padding: 1.5rem;
+}
+
+
+.photo-placeholder {
+width: 100%;
+height: 250px;
+background-color: #ced4da;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.photo-placeholder svg {
+width: 50px;
+height: 50px;
+fill: #adb5bd;
+}
+
+/* Courses Section */
+.filter-buttons {
+display: flex;
+gap: 0.5rem;
+justify-content: center;
+margin-bottom: 1.5rem;
+}
+
+.filter-btn {
+flex: 1;
+padding: 0.5rem;
+font-family: var(--font-main);
+font-weight: 500;
+background-color: #d3d3d3;
+border: 1px solid var(--charcoal-gray);
+border-radius: 4px;
+cursor: pointer;
+transition: all 0.2s ease;
+}
+
+.filter-btn:hover, .filter-btn.active-filter {
+background-color: var(--soft-forest-green);
+color: var(--cloud-white);
+border-color: var(--soft-forest-green);
+}
+
+.course-list {
+display: flex;
+flex-direction: column;
+gap: 0.5rem;
+margin-bottom: 1rem;
+}
+
+.course-item {
+background-color: #d3d3d3;
+border: 1px solid var(--charcoal-gray);
+padding: 1rem;
+text-align: center;
+font-weight: 500;
+}
+
+.course-item.completed {
+background-color: #b1d8b7; /* Light green to indicate completion conceptually */
+}
+
+.credits-info {
+text-align: center;
+font-weight: 500;
+margin-top: 1rem;
+color: var(--deep-blue);
+}
+
+/* Footer */
+footer {
+text-align: center;
+padding: 2rem 1rem;
+background-color: var(--light-gray);
+font-family: var(--font-footer);
+font-size: 0.9rem;
+margin-top: 2rem;
+}
+
+.social-links {
+display: flex;
+justify-content: center;
+gap: 1.5rem;
+margin-bottom: 1rem;
+}
+
+.social-links a {
+display: inline-block;
+transition: transform 0.2s ease;
+}
+
+.social-links a:hover {
+transform: scale(1.1);
+}
+
+.social-links svg {
+width: 32px;
+height: 32px;
+fill: var(--charcoal-gray);
+}
+
+.footer-text {
+margin: 0.5rem 0;
+color: var(--charcoal-gray);
+}
+
+
+@media (min-width: 768px) {
+/* Navigation */
+#menuBtn {
+    display: none; /* Hide hamburger */
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav li {
+    border-top: none;
+}
+
+nav a {
+    padding: 1rem 1.5rem;
+}
+
+/* Main Content Layout */
+.top-sections {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+    align-items: start;
+}
+
+/* Courss Grid */
+.course-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.filter-buttons {
+    max-width: 600px;
+    margin: 0 auto 1.5rem auto;
+}
+}
