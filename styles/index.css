@@ -2,11 +2,11 @@
 :root {
 --cloud-white: #F8F9FA;
 --soft-forest-green: #2D6A4F;
---deep-blue: #1B4332; /* Rendered as a dark shade per hex code */
+--deep-blue: #1B4332; 
 --charcoal-gray: #343A40;
 --light-gray: #E9ECEF;
 --font-main: 'Ubuntu', sans-serif;
---font-footer: 'Ubuntu', monospace; /* Using standard Ubuntu as requested fallback */
+--font-footer: 'Ubuntu', monospace; 
 }
 
 
@@ -26,7 +26,7 @@ flex-direction: column;
 min-height: 100vh;
 }
 
-/* Typography */
+/*typograhpy*/
 h1 {
 font-weight: 500;
 margin: 1.5rem 0 1rem;
@@ -68,7 +68,7 @@ font-weight: 700;
 color: var(--deep-blue);
 }
 
-/* Navigation */
+/* Nav! */
 #menuBtn {
 background: none;
 border: none;
@@ -90,7 +90,7 @@ width: 100%;
 
 nav ul {
 list-style-type: none;
-display: none; /* Hidden on mobile by default */
+display: none; 
 flex-direction: column;
 }
 
@@ -156,7 +156,8 @@ height: 50px;
 fill: #adb5bd;
 }
 
-/* Courses Section */
+/* Course
+ */
 .filter-buttons {
 display: flex;
 gap: 0.5rem;
@@ -198,7 +199,7 @@ font-weight: 500;
 }
 
 .course-item.completed {
-background-color: #b1d8b7; /* Light green to indicate completion conceptually */
+background-color: #b1d8b7;
 }
 
 .credits-info {
@@ -269,7 +270,6 @@ nav a {
     padding: 1rem 1.5rem;
 }
 
-/* Main Content Layout */
 .top-sections {
     display: grid;
     grid-template-columns: 2fr 1fr;
