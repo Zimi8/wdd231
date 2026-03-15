@@ -1,0 +1,58 @@
+[
+{
+"names": "Solartec",
+"address": "Av. Mitre 543, CABA, Argentina",
+"phone": "+54 11 4123-5678",
+"website": "https://solartec.com.ar/",
+"image": "images/solarTec.jpg",
+"membershipLevel": 3
+},
+{
+"names": "Solarsol",
+"address": "Calle Falsa 123, Córdoba, Argentina",
+"phone": "+54 351 456-7890",
+"website": "https://solarsol.com.ar/",
+"image": "images/solarsol.jpg",
+"membershipLevel": 2
+},
+{
+"names": "Ralip",
+"address": "Ruta 9 Km 45, Rosario, Argentina",
+"phone": "+54 341 234-5678",
+"website": "https://ralip.com.ar/",
+"image": "images/ralipBattery.jpg",
+"membershipLevel": 1
+},
+{
+"names": "Solar Power",
+"address": "San Juan 987, Mendoza, Argentina",
+"phone": "+54 261 567-8901",
+"website": "https://solarpower.com.ar/",
+"image": "images/solarPower.jpg",
+"membershipLevel": 3
+},
+{
+"names": "Genneia",
+"address": "Av. Libertador 1000, CABA, Argentina",
+"phone": "+54 11 5555-4444",
+"website": "https://www.genneia.com.ar/",
+"image": "images/genneia.jpg",
+"membershipLevel": 3
+},
+{
+"names": "ST Charger",
+"address": "Belgrano 250, Neuquén, Argentina",
+"phone": "+54 299 432-1098",
+"website": "https://stcharger.com.ar/",
+"image": "images/stCharger.jpg",
+"membershipLevel": 2
+},
+{
+"names": "ABO Energy",
+"address": "Moreno 753, Salta, Argentina",
+"phone": "+54 387 654-3210",
+"website": "https://www.aboenergy.com/ar/",
+"image": "images/aboEnergy.jpg",
+"membershipLevel": 3
+}
+]

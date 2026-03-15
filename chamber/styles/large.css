@@ -1,0 +1,57 @@
+@media (min-width: 768px) {
+    #menuBtn {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav a {
+        border-top: none;
+        padding: 1rem 2rem;
+    }
+
+    #directory-container.grid-view {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .list-view .member-card {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+
+    .list-view .member-card p {
+        margin: 0;
+    }
+
+    .list-view .member-card h3 {
+        flex: 1;
+    }
+
+    .list-view .member-card .address {
+        flex: 2;
+    }
+
+    .list-view .member-card .phone,
+    .list-view .member-card .website {
+        flex: 1;
+        text-align: right;
+    }
+
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+/*  media */ 
+@media (min-width: 1024px) {
+    #directory-container.grid-view {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

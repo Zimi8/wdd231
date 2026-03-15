@@ -1,0 +1,202 @@
+:root {
+    --cloud-white: #F8F9FA;
+    --soft-forest-green: #2D6A4F;
+    --deep-blue: #1B4332;
+    --charcoal-gray: #343A40;
+    --light-gray: #E9ECEF;
+    --font-main: 'Ubuntu', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--cloud-white);
+    color: var(--charcoal-gray);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: var(--deep-blue);
+    color: var(--cloud-white);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-container svg {
+    width: 50px;
+    height: 50px;
+    fill: var(--cloud-white);
+}
+
+#menuBtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    display: block;
+    
+}
+
+
+nav {
+    background-color: var(--soft-forest-green);
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    display: none;
+    flex-direction: column;
+}
+
+nav ul.open {
+    display: flex;
+}
+
+nav a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--cloud-white);
+    font-weight: 500;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+nav a:hover, nav a.active {
+    background-color: var(--deep-blue);
+}
+
+main {
+    flex: 1;
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--deep-blue);
+}
+
+.view-menu {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.view-menu button {
+    background-color: var(--light-gray);
+    border: 1px solid var(--charcoal-gray);
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-family: var(--font-main);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.view-menu button.active {
+    background-color: var(--soft-forest-green);
+    color: var(--cloud-white);
+    border-color: var(--deep-blue);
+}
+
+#directory-container {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+}
+
+.member-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.member-card img {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.member-card h3 {
+    color: var(--deep-blue);
+    margin-bottom: 0.5rem;
+}
+
+.member-card p {
+    margin-bottom: 0.25rem;
+    font-size: 0.95rem;
+}
+
+.member-card a {
+    color: var(--soft-forest-green);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.list-view {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0 !important;
+}
+
+.list-view .member-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    box-shadow: none;
+    padding: 1rem;
+}
+
+.list-view .member-card img {
+    display: none; 
+}
+
+.list-view .member-card h3 {
+    margin-bottom: 0;
+}
+
+footer {
+    background-color: var(--deep-blue);
+    color: var(--cloud-white);
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 0.9rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+footer p {
+    margin: 0.25rem 0;
+}
