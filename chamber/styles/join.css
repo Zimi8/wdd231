@@ -1,0 +1,148 @@
+.join-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.join-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.join-form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    color: #1B4332;
+}
+
+.join-form input,
+.join-form select,
+.join-form textarea {
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.submit-btn {
+    background-color: #1B4332;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #2D6A4F;
+}
+
+.cards-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.membership-card {
+    background-color: white;
+    border: 1px solid #1B4332;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    opacity: 0; 
+    transform: translateY(30px);
+    animation: fadeUp 0.8s ease forwards;
+}
+
+.membership-card:nth-child(1) { animation-delay: 0.2s; }
+.membership-card:nth-child(2) { animation-delay: 0.4s; }
+.membership-card:nth-child(3) { animation-delay: 0.6s; }
+.membership-card:nth-child(4) { animation-delay: 0.8s; }
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.membership-card h3 {
+    color: #1B4332;
+    margin-bottom: 0.5rem;
+}
+
+.modal-link {
+    background-color: #2D6A4F;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+dialog {
+    border: none;
+    border-radius: 8px;
+    padding: 2rem;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin: auto;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+dialog h2 {
+    color: #1B4332;
+}
+
+dialog ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.close-modal {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+.thank-you-container {
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.submission-details {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 2rem;
+    max-width: 600px;
+    margin: 2rem auto;
+    text-align: left;
+}
+
+@media (min-width: 768px) {
+    .join-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
