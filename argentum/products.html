@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Argentum Back Up Energy - Products</title>
+    <meta name="description" content="Shop our clean energy solutions including solar panels, battery banks, and solar awnings.">
+    <meta name="author" content="Ezequiel Jimenez">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <meta property="og:title" content="Argentum Back Up Energy - Products">
+    <meta property="og:description" content="Shop our clean energy solutions including solar panels, battery banks, and solar awnings.">
+    <meta property="og:image" content="https://ezequiel.github.io/argentum/images/og-products.png">
+    <meta property="og:url" content="https://ezequiel.github.io/argentum/products.html">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="images/FAVICON/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/FAVICON/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/FAVICON/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/FAVICON/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/FAVICON/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/FAVICON/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/FAVICON/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/FAVICON/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/FAVICON/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/FAVICON/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/FAVICON/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/FAVICON/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/FAVICON/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/products.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/CatoLeaf.jpg" alt="Argentum Back Up Energy Cat Logo" class="logo-img">
+            <div class="site-title">
+                <h2>ARGENTUM<br>BACK UP<br>ENERGY</h2>
+            </div>
+        </div>
+        <button id="menuBtn" aria-label="Toggle Navigation">
+            <img src="images/toggle.png" alt="menu toggle" class="toggle-icon">
+        </button>
+        <nav>
+            <ul id="primaryNav">
+                <li><a href="index.html">Home</a></li>
+                <li><span class="separator">|</span></li>
+                <li><a href="info.html">Info Center</a></li>
+                <li><span class="separator">|</span></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><span class="separator">|</span></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="currency-banner">
+            <p>Live Exchange Rate: 1 USD = <span id="ars-rate">Loading...</span> ARS</p>
+        </div>
+
+        <section class="filters">
+            <button class="filter-btn active" data-filter="all">All Products</button>
+            <button class="filter-btn" data-filter="battery">Battery Banks</button>
+            <button class="filter-btn" data-filter="solar">Solar Panels</button>
+            <button class="filter-btn" data-filter="awning">Awnings</button>
+            <button class="filter-btn" data-filter="house">House</button>
+            <button class="filter-btn" data-filter="apartment">Apartment</button>
+            <button class="filter-btn" data-filter="car">Cars</button>
+        </section>
+
+        <section class="product-catalog">
+            <div id="product-grid" class="grid-container"></div>
+        </section>
+
+        <dialog id="product-modal">
+            <div class="modal-content">
+                <button id="close-modal" class="close-btn">X</button>
+                <img id="modal-img" src="" alt="">
+                <h2 id="modal-title"></h2>
+                <p id="modal-desc"></p>
+                <p class="modal-price">Price: $<span id="modal-price"></span> USD</p>
+            </div>
+        </dialog>
+    </main>
+
+    <footer>
+        <div class="footer-left">
+            <img src="images/CatoLeaf.jpg" alt="Argentum Cat Logo" class="footer-logo">
+            <div class="footer-title">
+                <p>ARGENTUM BACK UP</p>
+                <p>ENERGY</p>
+            </div>
+        </div>
+        <div class="footer-center">
+            <p id="lastModified"></p>
+        </div>
+        <div class="footer-right">
+            <img src="images/instagram.png" alt="Instagram" class="social-icon">
+            <span class="separator">|</span>
+            <a href="#">linkedin</a>
+            <span class="separator">|</span>
+            <a href="#">tiktok</a>
+            <span class="separator">|</span>
+        </div>
+    </footer>
+
+    <script type="module" src="scripts/products.js"></script>
+</body>
+</html>

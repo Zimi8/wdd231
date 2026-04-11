@@ -1,0 +1,265 @@
+#menuBtn {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.toggle-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #95d39e;
+    padding: 3rem 2rem;
+    gap: 2rem;
+}
+
+.about-content {
+    flex: 1;
+    max-width: 800px;
+}
+
+.about-content h1, .about-content h2 {
+    color: #2D6A4F;
+    margin-bottom: 1rem;
+}
+
+.about-content p, .about-content ul {
+    color: #333333;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.about-content ul {
+    padding-left: 2rem;
+}
+
+.mascot-img {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+}
+
+.map-calculator-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 3rem 2rem;
+    background-color: #ffffff;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.map-container h2, .calculator-container h2 {
+    color: #2D6A4F;
+    margin-bottom: 1rem;
+}
+
+.map-container p, .calculator-container p {
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+#solar-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid #eeeeee;
+}
+
+#solar-form label {
+    font-weight: 700;
+    color: #333333;
+}
+
+#solar-form input, #solar-form select {
+    padding: 0.8rem;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.calc-btn {
+    background-color: #2D6A4F;
+    color: #ffffff;
+    border: none;
+    padding: 1rem;
+    border-radius: 4px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+.calc-btn:hover {
+    background-color: #1B4332;
+}
+
+.calc-result {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    background-color: #e8f5e9;
+    border-left: 5px solid #2D6A4F;
+    border-radius: 4px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.hidden {
+    display: none;
+}
+
+.financing-section {
+    background-color: #f9f9f9;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.financing-section h2 {
+    color: #2D6A4F;
+    margin-bottom: 1rem;
+}
+
+.financing-intro {
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.plans-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.plan-card {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.plan-title {
+    color: #2D6A4F;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #95d39e;
+    padding-bottom: 0.5rem;
+}
+
+.plan-installments {
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.plan-req {
+    color: #666666;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.plan-discount {
+    background-color: #f4c430;
+    color: #333333;
+    padding: 0.8rem;
+    font-weight: 700;
+    border-radius: 4px;
+}
+
+.banner-cta {
+    padding: 0;
+    width: 100%;
+}
+
+.banner-wrapper {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.large-banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.buy-now-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f4c430;
+    color: #333333;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1.5rem 4rem;
+    border-radius: 50px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.buy-now-btn:hover {
+    background-color: #e3b320;
+    transform: translate(-50%, -55%);
+}
+
+@media (max-width: 900px) {
+    .about-section {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    
+    .map-calculator-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    #menuBtn {
+        display: block;
+    }
+    
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #ffffff;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        padding: 1rem;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    
+    nav ul.open {
+        display: flex;
+    }
+
+    .separator {
+        display: none;
+    }
+
+    .buy-now-btn {
+        font-size: 1.5rem;
+        padding: 1rem 2rem;
+    }
+}
